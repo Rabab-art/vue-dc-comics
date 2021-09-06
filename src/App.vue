@@ -29,7 +29,7 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
-.container{
-max-width: 1200px;
+.container {
+  max-width: 1000px;
 }
 </style>
