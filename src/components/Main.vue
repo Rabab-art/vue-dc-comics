@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div class="row container">
+    <div class="row container icons">
       <div class="col">
         <img src="../assets/buy-comics-digital-comics.png" alt="" /><span
           >DIGITAL COMICS</span
@@ -28,38 +28,54 @@
       </div>
     </div>
     <section>
-      <div class="container row">
-        <div class="col-6">
+      <div class="container row menu">
+        <div class="col list">
           <h2>DC COMICS</h2>
           <ul>
-            <li>parole</li>
-            <li>parole</li>
-            <li>parole</li>
-            <li>parole</li>
-            <li>parole</li>
-            <li>parole</li>
-            <li>parole</li>
+            <li>Characters</li>
+            <li>Comics</li>
+            <li>Movies</li>
+            <li>TV</li>
+            <li>Games</li>
+            <li>Videso</li>
+            <li>News</li>
           </ul>
-
+          <br />
           <h2>SHOP</h2>
           <ul>
-            <li></li>
-            <li></li>
-          </ul>
-
-          <h2>DC</h2>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Shop DC</li>
+            <li>Shop DC Collection</li>
           </ul>
         </div>
-        <div class="col-6 logo-footer">
-          <img src="../assets/dc-logo-bg.png" alt="" />
+
+        <div class="col list">
+          <h2>DC</h2>
+          <ul>
+            <li>Terms of Use</li>
+            <li>Privacy</li>
+            <li>Ad Choices</li>
+            <li>Advertising</li>
+            <li>Jobs</li>
+            <li>Subscriptions</li>
+            <li>Talent Workshops</li>
+            <li>CPSC Certificates</li>
+            <li>Ratings</li>
+            <li>Shop Help</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+        <div class="col list">
+          <h2>Sites</h2>
+          <ul>
+            <li>DC</li>
+            <li>MAD Magazine</li>
+            <li>DC Kids</li>
+            <li>DC Universe</li>
+            <li>DC Power Visa</li>
+          </ul>
+        </div>
+        <div class="col logo-footer">
+          <img src="" alt="" />
         </div>
       </div>
     </section>
@@ -81,7 +97,7 @@ main {
   display: flex;
   flex-basis: 1;
 }
-.col {
+.icons .col {
   padding: 5px;
   display: flex;
   align-items: center;
@@ -104,11 +120,33 @@ section {
 .col.logo-footer {
   height: 110%;
   width: 350px;
+  background-image: url(../assets/dc-logo-bg.png);
+  background-size: cover;
 }
 h2 {
   color: white;
+  margin-bottom: 5px;
 }
 section .row {
   height: 100%;
+}
+section li {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  height: 100%;
+}
+.list {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 20px;
+  color: white;
+  line-height: 2 em;
+}
+
+.list li {
+  color: grey;
+  font-weight: 100;
+  font-size: 12px;
 }
 </style>

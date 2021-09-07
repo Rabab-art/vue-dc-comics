@@ -21,13 +21,11 @@ export default {
 </script>
 
 <style>
-#app {
-}
-
 * {
   margin: auto;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 .container {
   max-width: 1000px;

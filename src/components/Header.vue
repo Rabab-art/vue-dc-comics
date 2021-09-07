@@ -50,7 +50,7 @@ li a {
   text-decoration: none;
   text-transform: uppercase;
   color: black;
-  font-family: "Roboto", sans-serif;
+
   font-weight: 500;
 }
 h1 a {
