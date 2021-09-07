@@ -90,6 +90,9 @@ export default {
 <style scope>
 main {
   background-color: dodgerblue;
+}
+.icons {
+  background-color: dodgerblue;
   height: 120px;
 }
 
@@ -118,7 +121,7 @@ section {
   height: 300px;
 }
 .col.logo-footer {
-  height: 110%;
+  height: 100%;
   width: 350px;
   background-image: url(../assets/dc-logo-bg.png);
   background-size: cover;
