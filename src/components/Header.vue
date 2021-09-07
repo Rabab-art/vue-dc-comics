@@ -11,12 +11,16 @@
         <li><a href="">Video </a></li>
         <li><a href="">Fans </a></li>
         <li><a href="">News </a></li>
-        <li><a href="">Shp </a></li>
+        <li><a href="">Shop </a></li>
       </ul>
     </nav>
-    <div class="barra"><h1 class="container">Contente Goes here</h1></div>
+    <div class="insertion">
+      <h1 class="container"><a href="">--> Contente goes here </a></h1>
+    </div>
   </header>
 </template>
+
+
 <script>
 export default {
   name: "Header",
@@ -27,6 +31,12 @@ export default {
 nav {
   display: flex;
   justify-content: space-between;
+  height: 100px;
+}
+
+img {
+  height: 100%;
+  padding: 20px;
 }
 ul {
   display: inline;
@@ -36,13 +46,29 @@ li {
   display: inline-block;
   padding: 5px;
 }
+li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+h1 a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-weight: 100;
+}
+a:hover {
+  border-bottom: 10px solid black;
+}
 
-.barra {
-  height: 100px;
+.insertion {
+  height: 80px;
   background-color: black;
 }
-.barra h1 {
+.insertion h1 {
   color: white;
-  line-height: 100px;
+  line-height: 80px;
 }
 </style>
