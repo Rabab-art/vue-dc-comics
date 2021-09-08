@@ -1,5 +1,7 @@
 <template>
   <main>
+    <section class="jumbo-tron"></section>
+    <section class="cards"></section>
     <div class="row container icons">
       <div class="col">
         <img src="../assets/buy-comics-digital-comics.png" alt="" /><span
@@ -27,13 +29,14 @@
         >
       </div>
     </div>
-    <section>
+
+    <section class="main-menu">
       <div class="container row menu">
         <div class="col list">
           <h2>DC COMICS</h2>
           <ul>
             <li v-for="element in elements" :key="element.id">
-              {{ elemt.text }}
+              {{ element.text }}
             </li>
           </ul>
           <br />
@@ -167,7 +170,14 @@ span {
   padding: 5px;
   font-size: 15px;
 }
-section {
+.jumbo-tron {
+  background-image: url(../assets/jumbotron.jpg);
+  background-size: cover;
+
+  height: 300px;
+}
+
+.main-menu {
   background-image: url(../assets/footer-bg.jpg);
   background-size: cover;
   height: 300px;
@@ -182,10 +192,10 @@ h2 {
   color: white;
   margin-bottom: 5px;
 }
-section .row {
+.main-menu .row {
   height: 100%;
 }
-section li {
+.main-menu li {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
@@ -203,5 +213,10 @@ section li {
   color: grey;
   font-weight: 100;
   font-size: 12px;
+}
+
+.cards {
+  height: 400px;
+  background-color: rgb(48, 48, 48);
 }
 </style>
