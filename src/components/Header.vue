@@ -3,15 +3,9 @@
     <nav class="container">
       <img src="../assets/dc-logo.png" alt="" />
       <ul>
-        <li><a href="">Characters</a></li>
-        <li><a href="">Comes </a></li>
-        <li><a href="">Movies </a></li>
-        <li><a href="">TV </a></li>
-        <li><a href="">Games </a></li>
-        <li><a href="">Video </a></li>
-        <li><a href="">Fans </a></li>
-        <li><a href="">News </a></li>
-        <li><a href="">Shop </a></li>
+        <li v-for="element in elements" :key="element.id">
+          <a href=""> {{ element.text }}</a>
+        </li>
       </ul>
     </nav>
     <div class="insertion">
@@ -24,10 +18,66 @@
 <script>
 export default {
   name: "Header",
+  data() {
+    return {
+      elements: [
+        {
+          text: "Characters",
+          url: "",
+          current: false,
+        },
+        {
+          text: "Comics",
+          url: "#",
+          current: true,
+        },
+        {
+          text: "Movies",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "TV",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Games",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Collectibles",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Videos",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Fans",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "News",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Shop",
+          url: "#",
+          current: false,
+        },
+      ],
+    };
+  },
 };
 </script>
 
-<style >
+<style lang="scss" scoped>
 nav {
   display: flex;
   justify-content: space-between;
@@ -45,13 +95,14 @@ ul {
 li {
   display: inline-block;
   padding: 5px;
+  padding-bottom: 20px;
 }
 li a {
   text-decoration: none;
   text-transform: uppercase;
   color: black;
-
   font-weight: 500;
+  padding: 10px;
 }
 h1 a {
   text-decoration: none;
@@ -61,6 +112,7 @@ h1 a {
 }
 a:hover {
   border-bottom: 10px solid black;
+  margin-top: 20px;
 }
 
 .insertion {

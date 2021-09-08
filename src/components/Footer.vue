@@ -20,7 +20,7 @@ export default {
 };
 </script>
 
-<style scope>
+<style lang="scss" scoped>
 footer {
   height: 80px;
   background-color: rgb(64, 73, 73);
@@ -33,8 +33,10 @@ footer {
   text-decoration: none;
   border: 4px solid dodgerblue;
   padding: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
 }
-footer .col {
+.row {
   display: flex;
   height: 100%;
 }
@@ -43,8 +45,19 @@ footer .col {
   border: 4px solid transparent;
 }
 .social p {
-  text-decoration: uppercase;
   color: dodgerblue;
   font-weight: 600;
+  font-size: 20px;
+}
+.social img {
+  padding: 5px;
+}
+.col.social {
+  display: flex;
+}
+
+.col .sing-up {
+  display: flex;
+  vertical-align: middle;
 }
 </style>

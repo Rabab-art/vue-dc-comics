@@ -32,13 +32,9 @@
         <div class="col list">
           <h2>DC COMICS</h2>
           <ul>
-            <li>Characters</li>
-            <li>Comics</li>
-            <li>Movies</li>
-            <li>TV</li>
-            <li>Games</li>
-            <li>Videso</li>
-            <li>News</li>
+            <li v-for="element in elements" :key="element.id">
+              {{ elemt.text }}
+            </li>
           </ul>
           <br />
           <h2>SHOP</h2>
@@ -84,10 +80,66 @@
 <script>
 export default {
   name: "Main",
+  data() {
+    return {
+      elements: [
+        {
+          text: "Characters",
+          url: "",
+          current: false,
+        },
+        {
+          text: "Comics",
+          url: "#",
+          current: true,
+        },
+        {
+          text: "Movies",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "TV",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Games",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Collectibles",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Videos",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Fans",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "News",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Shop",
+          url: "#",
+          current: false,
+        },
+      ],
+    };
+  },
 };
 </script>
 
-<style scope>
+<style lang="scss" scoped>
 main {
   background-color: dodgerblue;
 }
@@ -104,7 +156,7 @@ main {
   padding: 5px;
   display: flex;
   align-items: center;
-  height: 100px;
+  height: 70px;
 }
 .col img {
   height: 100%;
