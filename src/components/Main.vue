@@ -5,7 +5,7 @@
       <section class="cards row">
         <div class="col-card" v-for="(card, index) in cards" :key="index">
           <img :src="card.thumb" alt="" />
-          <div>{{ card.price }}</div>
+          <div>{{ card.series }}</div>
         </div>
       </section>
     </div>
@@ -314,11 +314,16 @@ h2 {
   flex-wrap: wrap;
   padding-top: 20px;
   padding-bottom: 20px;
-  max-width: calc(900px / 4);
+  justify-content: center;
+  max-width: 1000px;
 }
 .col-card {
+  width: 200px;
+  text-align: center;
+  padding: 5px;
+  color: white;
 }
 img {
-  max-width: 100px;
+  height: 200px;
 }
 </style>
